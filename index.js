@@ -11,7 +11,7 @@ let email;// declare email
     email: email,
   }
   };
-  const options ={
+  const options ={ //fetch request
     method:`POST`,
     headers: {
       "Content-Type": "application/json",
@@ -21,7 +21,7 @@ let email;// declare email
   fetch("http://localhost:3000/users")
   .then(response =>{
     if(!response.ok) {
-      throw new Error("network poor network response");
+      throw new Error("network poor network response");//throws error when response is
     }
 
     })
